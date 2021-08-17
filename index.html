@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>CleanWater Quiz</title>
+  </head>
+  <body>
+    <div class="main-page-wrapper">
+      <div class="intro-screen">
+        <img src="/assets/img/water.png" alt="app-logo" />
+
+        <h1>WaterQuiz</h1>
+        <p>Helping you learn about Safe Drinking Water</p>
+        <button>Begin Quiz</button>
+      </div>
+
+      <!-- Quiz Box -->
+      <div class="quiz_box">
+        <header>
+          <div class="timer">
+            <div class="timer_sec">30</div>
+            <div class="time_left_txt">Time Left</div>
+          </div>
+          <div class="points">
+            <span>Points</span>
+            <span class="points_numb">0</span>
+          </div>
+        </header>
+        <section>
+          <div class="number">
+            Question <span class="que_numb">1</span> of <span class="que_total">15</span>
+          </div>
+          <div class="que_text">
+            <!-- * DATA INSERTED VIA JS -->
+          </div>
+          <div class="option_list"> 
+            <!-- * DATA INSERTED VIA JS -->
+          </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+          <div class="total_que">
+            <!-- * DATA INSERTED VIA JS -->
+          </div>
+          <button class="next_btn" disabled>Next</button>
+        </footer>
+      </div>
+
+      <!-- QUIZ RESULTS -->
+      <div class="results">
+        <div class="results_data">
+          <h1>Quiz Results</h1>
+          <div class="circles">
+            <div>Total Points<span class="total_points">0</span></div>
+            <div>Total Time<span class="total_time">10</span>seconds</div>
+          </div>
+
+          <button>Restart Quiz</button>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/questions.js"></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

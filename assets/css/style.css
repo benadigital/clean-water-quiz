@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  --primary-color: #366ee8;
+  --background-color: #1d3974;
+  --opt-color: #1d3974;
+
+  --btn-color: #1d3974;
+  --btn-hover: #284a93;
+  --text-color: #fff;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none !important;
+  transition: all 0.3s ease;
+}
+
+.option_list .correct{
+  background-color: green;
+  opacity: 100% !important;
+}
+
+.option_list .correct:hover{
+  background-color: green;
+
+}
+
+.option_list .incorrect{
+  background-color: red;
+  opacity: 50% !important;
+}
+
+.option_list .incorrect:hover{
+  background-color: red;
+}
+
+.next_btn:disabled, .disabled {
+  opacity: 40%;
+}
+
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.main-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.intro-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1.25em;
+  padding: 5em 6em;
+  background-color: var(--primary-color);
+  border-radius: 1em;
+  /* height: 60vh; */
+}
+
+.intro-screen img {
+  height: 15.625em;
+}
+
+.intro-screen h1 {
+  margin: .5em 0em;
+  font-size: 2em;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+}
+
+.intro-screen p {
+  margin: .5em 0em;
+  width: 100%;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.intro-screen button {
+  margin: .5em 0em;
+}
+
+.intro-screen button, .results button {
+  border: none;
+  padding: 0.5em 2em;
+  border-radius: 1em;
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  transition: ease-in-out 250ms;
+}
+
+.intro-screen button:hover {
+  background-color: var(--btn-hover);
+  cursor: pointer;
+}
+
+.quiz_box {
+  min-width: 50em;  
+  margin: 1.25em;
+  background-color: var(--primary-color);
+  padding: 2em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.results{
+  margin: 20em;
+  max-width: 30em; 
+  width: 80vh; 
+  margin: 1.25em;
+  background-color: var(--primary-color);
+  padding: 2em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.results_data h1 {
+  font-size: 2em;
+}
+
+
+
+.results_data{
+  margin: 1em;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circles {
+  display: flex;
+}
+.results_data .circles div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+
+  margin: .5em;
+  margin-bottom: 1em;
+  background-color: var(--background-color);
+  
+}
+
+.quiz_box header{
+  /* display: flex; */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.points{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: right;
+}
+
+.quiz_box .number {
+  opacity: 50%;
+  font-size: 0.8rem;
+}
+
+.quiz_box .number .que-numb {
+  font-size: 0.8rem;
+}
+
+.timer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer_sec {
+  border: solid 1px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+
+.time_left_txt {
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+
+.que_text span {
+  font-size: 1.5em;
+}
+
+.option_list {
+  margin: 1em 2em;
+}
+
+.option {
+  margin-bottom: 1.5em;
+  padding: 1em;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--opt-color);
+  transition: ease-in-out 200ms;
+}
+
+.option:hover {
+  background-color: var(--btn-hover);
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.next_btn, .stop {
+  padding: 1em 5em;
+  background-color: var(--btn-color);
+  border: none;
+  color: var(--text-color);
+  border-radius: 1em;
+  width: 80%;
+  transition: ease-in-out 200ms;
+}
+
+.next_btn:hover {
+  background-color: var(--btn-hover);
+  cursor: pointer;
+}
